@@ -16,7 +16,7 @@ const FirstSec = () => {
               // .pauseFor(2500)
               .pasteString("We're here to help you ")
               .typeString(
-                "<br> <strong>Generate more leads</strong>"
+                "<br/><strong>Generate more leads</strong>"
               )
               .pauseFor(300)
               .deleteChars(20)
