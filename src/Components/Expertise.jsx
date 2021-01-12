@@ -47,7 +47,7 @@ const Expertise = () => {
 
   return (
     <div className="Expertise">
-      <div className="expertise-logos" data-aos="flip-up" data-offset = "200" >
+      <div className="expertise-logos" data-aos="fade-up" data-offset = "200" >
         <div className="logos-col-a">
           <div className="expertise-logo">
             <img
@@ -105,14 +105,14 @@ const Expertise = () => {
       </div>
       <div className="expertise-text">
         <div className="expertise-subHeading" data-aos="fade-down" data-offset = "200">constantly innovating</div>
-        <div className="expertise-heading" data-aos = "fade-left">
+        <div className="expertise-heading" data-aos = "fade-down">
           Our toolbox helps businesses grow.
         </div>
-        <div className="expertise-desc" data-aos = "fade-left">
+        <div className="expertise-desc" data-aos = "fade-down">
           We are always looking for ways to provide more value to our clients by
           experimenting with the most advanced tools in digital marketing.
         </div>
-        <div className="expertise-button" data-aos = "fade-down-left">
+        <div className="expertise-button" data-aos = "fade-up">
           <a href="#" className="getStarted">
             Let's get started
           </a>

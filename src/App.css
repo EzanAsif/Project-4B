@@ -5,6 +5,7 @@ body {
   padding: 0;
   box-sizing: border-box;
   list-style-type: none !important;
+  overflow-x: hidden;
 }
 
 /* NAVBAR */
@@ -490,6 +491,8 @@ body {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  background-size: cover;
+  flex-wrap: wrap;
 }
 
 .Expertise .expertise-logos {
@@ -596,15 +599,15 @@ body {
   transition: 0.2s ease;
 }
 
-.Expertise .expertise-text .expertise-button .How_we_work{
+.Expertise .expertise-text .expertise-button .How_we_work {
   font-family: "Montserrat";
-font-size: 20px;
-display: flex;
-justify-content: space-around;
-align-items: center;
-padding: 18px 10px;
-color: #91c691;
-font-weight: 500;
+  font-size: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 18px 10px;
+  color: #91c691;
+  font-weight: 500;
 }
 
 /* COLUMN C */
@@ -889,7 +892,60 @@ font-weight: 500;
 ============   MEDIA QUERIES   ========
 ==================================== */
 
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 1400px) and (min-width: 960px) {
+  .first-sec {
+    width: 100%;
+    height: 83vh;
+    background: url("https://junto.digital/wp-content/uploads/2018/09/hero-home.jpg")
+      no-repeat bottom;
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-size: 100% 90%;
+    background-repeat: no-repeat;
+  }
+  .first-sec .first-sec-heading {
+    left: 10%;
+  }
+  .first-sec .Typewriter {
+    line-height: 50px;
+    font-size: 35px;
+  }
+
+  .nav-links {
+    padding: 0.5rem 0.6rem;
+  }
+  .GetStarted {
+    width: 200px;
+  }
+
+  .sec-section .LatestArticle {
+    width: 43%;
+  }
+
+  .sec-section .LatestArticle .latestArticle-PrimaryHeading .Primary_Heading1 {
+    font-size: 18px;
+    width: 100%;
+  }
+
+  .Expertise .expertise-logos {
+    width: 50%;
+  }
+
+  .Expertise {
+    background-size: cover;
+  }
+
+  .Expertise .expertise-text .expertise-heading {
+    font: 700 2rem/1.25 "Montserrat", sans-serif;
+    margin: 0.5rem 0 0.5rem;
+  }
+
+  .Expertise .expertise-text .expertise-desc {
+    font: 400 1.1rem/1.45 "Poppins", sans-serif;
+  }
+}
+
+@media screen and (max-width: 960px) and (min-width: 600px) {
   .NavbarItems {
     position: relative;
   }
@@ -976,4 +1032,404 @@ font-weight: 500;
     color: #242424;
     transition: 250ms;
   }
+
+  /* ==================================================== */
+
+  .first-sec {
+    background-size: 100% 70%;
+    background-position: bottom;
+  }
+  .first-sec .first-sec-heading {
+    left: 8%;
+    top: 5%;
+  }
+  .first-sec .Typewriter {
+    line-height: 50px;
+    font-size: 30px;
+    margin-bottom: 0;
+  }
+
+  .nav-links {
+    padding: 0.5rem 0.6rem;
+  }
+  .GetStarted {
+    width: 200px;
+  }
+
+  .sec-section .LatestArticle {
+    width: 43%;
+  }
+
+  .sec-section .LatestArticle .latestArticle-PrimaryHeading .Primary_Heading1 {
+    font-size: 18px;
+    width: 100%;
+  }
+
+  .Expertise {
+    background-size: cover;
+  }
+
+  .sec-section {
+    height: max-content;
+    justify-content: center;
+  }
+
+  .sec-section .LatestArticle {
+    width: 80%;
+    margin: 5px 0px;
+  }
+  .Testimonials {
+    margin-top: 550px;
+  }
+  .Testimonials .testimonial-secondary-heading {
+    font: 700 1.8rem/1.25 "Montserrat", sans-serif;
+  }
+
+  .clients-logo {
+    width: 100%;
+  }
+  .clients-logo ul li a {
+    margin: 0px;
+  }
+
+  .Expertise {
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    background-size: cover;
+    margin: 50px 0px 0px 0px;
+  }
+
+  .Expertise .expertise-logos {
+    width: 65%;
+  }
+  .Expertise .expertise-text {
+    width: 75%;
+  }
+  .Expertise .expertise-text .expertise-subHeading {
+    text-align: center;
+  }
+  .Expertise .expertise-text .expertise-heading {
+    text-align: center;
+    font-size: 1.8rem;
+  }
+
+  .Expertise .expertise-text .expertise-button {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .Insights .insights-sec {
+    font-size: 1.8rem;
+  }
+
+  .Insights .insights-container {
+    width: 90%;
+    justify-content: center;
+  }
+
+  .Insights .insights-container .sign-up {
+    width: 70%;
+    margin-bottom: 15px;
+    height: 60vh;
+  }
+
+  .Insights .insights-container .insights-container-img {
+    width: 70%;
+    height: 70vh;
+  }
+
+  .Insights .insights-container {
+    height: max-content;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .NavbarItems {
+    position: relative;
+  }
+
+  .navbar-container {
+    align-items: center;
+  }
+
+  .nav-menu {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: max-content;
+    position: absolute;
+    top: 80px;
+    left: -110%;
+    opacity: 1;
+    transition: all 0.5s ease;
+  }
+
+  .nav-menu.active {
+    background: rgb(250, 255, 249);
+    left: 0;
+    opacity: 1;
+    transition: all 0.5s ease;
+    z-index: 1;
+    margin: 0 !important;
+    max-width: 100%;
+    padding-left: 0 !important;
+  }
+
+  .nav-links {
+    text-align: center;
+    padding: 0;
+    width: 100%;
+    display: table;
+  }
+
+  .nav-links:hover {
+    background-color: #fff;
+    color: #242424;
+    border-radius: 0;
+  }
+
+  .navbar-logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(25%, 50%);
+  }
+
+  .menu-icon {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-100%, 60%);
+    font-size: 1.8rem;
+    cursor: pointer;
+  }
+
+  .fa-times {
+    color: #fff;
+    font-size: 2rem;
+  }
+
+  .nav-links-mobile {
+    display: block;
+    text-align: center;
+    margin: 2rem auto;
+    border-radius: 4px;
+    width: 80%;
+    text-decoration: none;
+    font-size: 1.5rem;
+    background-color: transparent;
+    color: #fff;
+    padding: 14px 20px;
+    border: 1px solid #fff;
+    transition: all 0.3s ease-out;
+  }
+
+  .nav-links-mobile:hover {
+    background: #fff;
+    color: #242424;
+    transition: 250ms;
+  }
+
+  /* ==================================================== */
+
+  .first-sec {
+    background-size: 100% 70%;
+    background-position: bottom;
+  }
+  .first-sec .first-sec-heading {
+    left: 8%;
+    top: 5%;
+    width: 90%;
+  }
+
+  .first-sec .first-sec-call-to-aciton {
+    flex-wrap: wrap;
+    justify-content: start;
+  }
+
+  .first-sec .first-sec-call-to-aciton .primary {
+    font-size: 12px;
+    width: 60%;
+    text-align: center;
+  }
+
+  .first-sec .first-sec-call-to-aciton .secondary {
+    font-size: 18px;
+  }
+
+  .first-sec .Typewriter {
+    line-height: 40px;
+    font-size: 25px;
+    margin-bottom: 0;
+    height: 100px;
+  }
+
+  .nav-links {
+    padding: 0.5rem 0.6rem;
+  }
+  .GetStarted {
+    display: none;
+  }
+
+  .sec-section .LatestArticle .latestArticle-PrimaryHeading {
+    width: 90%;
+    line-height: 25px;
+  }
+
+  .sec-section .LatestArticle .latestArticle-secHeading {
+    margin-bottom: 10px;
+  }
+
+  .sec-section .LatestArticle .latestArticle-PrimaryHeading .Primary_Heading0 {
+    font-size: 25px;
+  }
+
+  .sec-section .LatestArticle .latestArticle-PrimaryHeading .Primary_Heading1 {
+    font-size: 16px;
+    width: 100%;
+  }
+
+  .sec-section {
+    height: max-content;
+    justify-content: center;
+  }
+
+  .latestArticle-secHeading {
+    margin-bottom: 10px;
+  }
+
+  .sec-section .LatestArticle {
+    width: 80%;
+    margin: 5px 0px;
+  }
+  .Testimonials {
+    margin-top: 550px;
+  }
+
+  .Testimonials .testimonial-primary-heading {
+    font-size: 12px;
+    text-align: center;
+  }
+
+  .Testimonials .testimonial-secondary-heading {
+    font: 700 1.8rem/1.25 "Montserrat", sans-serif;
+    color: #18242a;
+    margin: 1rem 0 0.5rem;
+    text-align: center;
+  }
+
+  .testimonial-box {
+    width: 97%;
+    padding: 5px !important;
+    max-width: 99%;
+    justify-content: center;
+  }
+
+  .Testimonials .testimonial-box .box-message q{
+    font-size: 15px;
+  }
+
+  .clients-logo {
+    width: 100%;
+  }
+
+  .clients-logo ul {
+    flex-wrap: wrap ;
+  }
+
+  .clients-logo ul li a {
+    margin: 0px;
+  }
+
+  .Expertise {
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    background-size: cover;
+    margin: 50px 0px 0px 0px;
+  }
+
+  .Expertise .expertise-logos {
+    width: 65%;
+  }
+  .Expertise .expertise-text {
+    width: 85%;
+  }
+
+  .Expertise .expertise-text .expertise-subHeading {
+    text-align: center;
+    font-size: 11px;
+  }
+  .Expertise .expertise-text .expertise-heading {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+
+  .Expertise .expertise-text .expertise-desc{
+    font: 400 0.9rem/1.45 "Poppins", sans-serif;
+  }
+
+  .Expertise .expertise-text .expertise-button {
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .Expertise .expertise-logos .logos-col-a{
+    width: 65%;
+  }
+
+  .Expertise .expertise-logos .logos-col-b,
+  .Expertise .expertise-logos .logos-col-c{
+    display: none;
+  }
+
+  .Insights .insights-prim{
+    font-size: 12px;
+  }
+
+  .Insights .insights-sec {
+    font-size: 1.5rem;
+  }
+
+  .Insights .insights-container {
+    width: 90%;
+    justify-content: center;
+  }
+
+  .Insights .insights-container {
+    height: max-content;
+  }
+  .Insights .insights-container .sign-up {
+    width: 100%;
+    margin-bottom: 15px;
+    height: max-content;
+    padding-bottom: 20px;
+  }
+  .Insights .insights-container .sign-up h5{
+    font-size: 12px;
+  }
+  .Insights .insights-container .sign-up h2{
+    font-size: 12px;
+    width: 85%;
+  }
+
+  .Insights .insights-container .sign-up .form{
+    width: 90%;
+  }
+
+  .Insights .insights-container .sign-up .form input{
+    width:100%
+  }
+
+  .Insights .insights-container .sign-up .form h6{
+    margin: 15px;
+  }
+
+  .Insights .insights-container .insights-container-img {
+    width: 100%;
+    height: 70vh;
+  }
+
 }
