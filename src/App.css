@@ -576,6 +576,37 @@ body {
   width: 100%;
 }
 
+.Expertise .expertise-text .expertise-button {
+  width: max-content;
+  height: max-content;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.Expertise .expertise-text .expertise-button .getStarted {
+  font-family: "Montserrat";
+  text-decoration: none;
+  color: white;
+  background: #191c3c;
+  padding: 16px 18px;
+  border-radius: 55px;
+  font-weight: 500;
+  font-size: 15px;
+  transition: 0.2s ease;
+}
+
+.Expertise .expertise-text .expertise-button .How_we_work{
+  font-family: "Montserrat";
+font-size: 20px;
+display: flex;
+justify-content: space-around;
+align-items: center;
+padding: 18px 10px;
+color: #91c691;
+font-weight: 500;
+}
+
 /* COLUMN C */
 
 .Expertise .expertise-logos .logos-col-c {
@@ -658,7 +689,8 @@ body {
   margin: 0 0 50px 0;
   height: max-content;
   background-color: #f8f8f8;
-  background: url(https://junto.digital/wp-content/themes/junto/assets/img/background-news-subscribe.svg) 0 0/100% no-repeat rgba(239, 242, 245, 0.59);
+  background: url(https://junto.digital/wp-content/themes/junto/assets/img/background-news-subscribe.svg)
+    0 0/100% no-repeat rgba(239, 242, 245, 0.59);
 }
 
 .Insights .insights-prim {

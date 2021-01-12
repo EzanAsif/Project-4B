@@ -33,7 +33,7 @@ const Testimonials = (
           <h5 className="company">{company}</h5>
         </div>
       </div>
-      <div className="clients-logo">
+      <div className="clients-logo" data-aos = "zoom-out-left">
         <ul>
           <li><a href="#"><img src="https://junto.digital/wp-content/uploads/2018/08/Cardinal-Group-Logo-300x76.png"/></a></li>
           <li><a href="#"><img className = "no-filter" src="https://junto.digital/wp-content/uploads/logo-4-rivers.png"/></a></li>

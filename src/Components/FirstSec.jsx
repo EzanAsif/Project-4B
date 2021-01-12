@@ -19,7 +19,7 @@ const FirstSec = () => {
                 "<br/><strong>Generate more leads</strong>"
               )
               .pauseFor(300)
-              .deleteChars(20)
+              .deleteChars(19)
               .typeString("<strong>To grow your business</strong>")
               .deleteChars(21)
               .typeString("<strong>Close more deals.</strong>")
